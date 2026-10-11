@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI 自习室</title>
+  <meta name="description" content="AI 自习室是一款 iPhone 与 iPad 应用。在本机把工作材料做成可以核对的成果。">
+  <meta name="theme-color" content="#F7FAFC" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#16232D" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/site.css">
+</head>
+<body data-page="home">
+  <a class="skip" href="#content"><span class="zh">跳到正文</span><span class="en">Skip to content</span></a>
+  <header class="mast frame">
+    <a class="brand" href="./" translate="no">AI 自习室</a>
+    <nav class="nav" aria-label="站点">
+      <a href="./" aria-current="page"><span class="zh">首页</span><span class="en">Home</span></a>
+      <a href="privacy/"><span class="zh">隐私政策</span><span class="en">Privacy</span></a>
+      <a href="support/"><span class="zh">技术支持</span><span class="en">Support</span></a>
+    </nav>
+    <button class="lang" type="button" data-set-lang>English</button>
+  </header>
+  <main id="content" class="frame">
+    <h1>AI 自习室</h1>
+    <p class="lede">
+      <span class="zh">在 iPhone 或 iPad 上，把一份工作材料做成可以核对的成果。没有账号。记录留在这台设备。</span>
+      <span class="en">On iPhone or iPad, turn one piece of work into a result you can check. No account. Records stay on the device.</span>
+    </p>
+    <div class="desk">
+      <ol class="steps">
+        <li>
+          <b>1</b>
+          <div>
+            <strong class="zh">读材料</strong><strong class="en">Read the material</strong>
+            <p class="zh">从一堂大约十五分钟的课开始。课程原文是简体中文，用来对照固定事实。</p>
+            <p class="en">Start with a lesson of about fifteen minutes. Source text stays in Simplified Chinese so the facts can be checked.</p>
+          </div>
+        </li>
+        <li>
+          <b>2</b>
+          <div>
+            <strong class="zh">写下要求</strong><strong class="en">Write the request</strong>
+            <p class="zh">自己写给 AI 的提示。可以复制到你常用的工具，也可以在已配置的 HTTPS 服务里生成。发送前会先请你确认。</p>
+            <p class="en">Write the prompt yourself. Copy it into the tool you already use, or generate through a configured HTTPS service. Nothing is sent until you confirm.</p>
+          </div>
+        </li>
+        <li>
+          <b>3</b>
+          <div>
+            <strong class="zh">核对并留下</strong><strong class="en">Check it, then keep it</strong>
+            <p class="zh">把结果带回作品区，对照原文标出事实和仍待确认的地方。保存的成果带着提示、依据和验证范围。</p>
+            <p class="en">Bring the result back, mark what the source actually says, and keep what still needs confirmation. A saved result carries the prompt, the evidence, and the scope of the check.</p>
+          </div>
+        </li>
+      </ol>
+      <aside class="excerpt">
+        <p class="label"><span class="zh">第一课材料</span><span class="en">First lesson</span></p>
+        <p>1. 项目准备周四下午发布。
+2. 小林负责文案初稿，周二 18:00 前提交。
+3. 老周检查文案中的数据，下次会议之前完成。
+4. 发布页面还需要校对，会上没有指定负责人。
+5. 图片要用新品牌色，颜色值后续确认。</p>
+      </aside>
+    </div>
+    <section class="block facts-block">
+      <h2><span class="zh">留在这台设备</span><span class="en">It stays on this device</span></h2>
+      <dl class="facts">
+        <div>
+          <dt><span class="zh">没有账号</span><span class="en">No account</span></dt>
+          <dd class="zh">不注册，不同步，不投放广告，也不接入分析服务。</dd>
+          <dd class="en">No sign-in, no sync, no ads, and no analytics.</dd>
+        </div>
+        <div>
+          <dt><span class="zh">iPhone 与 iPad</span><span class="en">iPhone and iPad</span></dt>
+          <dd class="zh">需要 iOS 18。窄屏是单列；宽屏把课程和练习并排。iPad 使用侧边栏，并支持分屏。</dd>
+          <dd class="en">Requires iOS 18. Narrow screens stay in one column. Wide screens place the path beside the practice. iPad uses a sidebar and supports Split View.</dd>
+        </div>
+        <div>
+          <dt><span class="zh">备份由你保存</span><span class="en">Backups stay where you put them</span></dt>
+          <dd class="zh">可以导出 JSON 学习备份，并在另一台设备上合并缺失记录。文件去向由系统的文件选择器决定。</dd>
+          <dd class="en">Export a JSON learning backup and merge missing records on another device. The system file picker decides where the file goes.</dd>
+        </div>
+      </dl>
+    </section>
+  </main>
+  <footer class="foot frame">
+    <span>AI 自习室 0.2.0</span>
+    <span><span class="zh">界面提供 13 种语言。课程原文与自动验收保持简体中文。</span><span class="en">The interface ships in 13 languages. Lesson sources and automatic checks stay in Simplified Chinese.</span></span>
+  </footer>
+  <script src="assets/site.js"></script>
+</body>
+</html>

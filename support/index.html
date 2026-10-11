@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>技术支持 · AI 自习室</title>
+  <meta name="description" content="AI 自习室的技术支持：备份、语言、删除数据、iPhone 与 iPad、可选的 AI 服务。">
+  <meta name="theme-color" content="#F7FAFC" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#16232D" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body data-page="support">
+  <a class="skip" href="#content"><span class="zh">跳到正文</span><span class="en">Skip to content</span></a>
+  <header class="mast frame">
+    <a class="brand" href="../" translate="no">AI 自习室</a>
+    <nav class="nav" aria-label="站点">
+      <a href="../"><span class="zh">首页</span><span class="en">Home</span></a>
+      <a href="../privacy/"><span class="zh">隐私政策</span><span class="en">Privacy</span></a>
+      <a href="./" aria-current="page"><span class="zh">技术支持</span><span class="en">Support</span></a>
+    </nav>
+    <button class="lang" type="button" data-set-lang>English</button>
+  </header>
+  <main id="content" class="frame">
+    <h1><span class="zh">技术支持</span><span class="en">Support</span></h1>
+    <p class="lede">
+      <span class="zh">下面是应用里实际会遇到的操作。版本 0.2.0，需要 iOS 18。</span>
+      <span class="en">These are the operations the app actually has. Version 0.2.0 requires iOS 18.</span>
+    </p>
+    <article class="block support">
+      <section>
+        <h2><span class="zh">继续上次的练习</span><span class="en">Continue the last practice</span></h2>
+        <p class="zh">今天页的主按钮会打开尚未完成的草稿。全部尝试在“我的草稿”里。左滑可以删除一份草稿；已经保存的成果仍保留自己的副本。</p>
+        <p class="en">The main button on Today opens the unfinished draft. Every attempt is listed in My drafts. Swipe to delete one draft. Saved work keeps its own copy.</p>
+      </section>
+      <section>
+        <h2><span class="zh">换语言</span><span class="en">Change the language</span></h2>
+        <p class="zh">设置里可以选择跟随系统，或指定 13 种语言之一。切换后界面立即更新，包括阿拉伯语从右到左的排版。主屏幕上的应用名称跟随设备语言。课程原文、教学示例和自动验收仍是简体中文。</p>
+        <p class="en">In Settings, follow the system or pick one of 13 languages. The interface updates immediately, including right-to-left layout for Arabic. The Home Screen name follows the device language. Lesson sources, examples, and automatic checks remain Simplified Chinese.</p>
+      </section>
+      <section>
+        <h2><span class="zh">iPhone 与 iPad</span><span class="en">iPhone and iPad</span></h2>
+        <p class="zh">iPhone 使用底部标签。iPad 和较宽的窗口使用侧边栏，学习路线和成果会分成两列。分屏或台前调度把窗口变窄时，界面回到单列。外接键盘可以用 ⌘1、⌘2、⌘3 切换今天、学习路线和我的成果。支持竖屏与横屏，也支持系统的更大文字和深色外观。</p>
+        <p class="en">iPhone uses the bottom tabs. iPad and wider windows use a sidebar, and the path and saved work split into two columns. When Split View or Stage Manager makes the window narrow, the layout returns to one column. With a hardware keyboard, ⌘1, ⌘2, and ⌘3 switch Today, Path, and My work. Portrait, landscape, larger text, and Dark Mode are supported.</p>
+      </section>
+      <section>
+        <h2><span class="zh">备份与恢复</span><span class="en">Backup and restore</span></h2>
+        <p class="zh">在设置中导出学习备份，系统会让你选择保存位置。文件名以当前语言的应用名开头。恢复时先预览内容，再合并。同一条记录保留这台设备上的正文；帮助和示例标记只会增加，不会被备份清掉。过大、损坏或版本不符的文件不会覆盖现有记录。</p>
+        <p class="en">Export a learning backup from Settings and choose where the system saves it. The file name starts with the app name in the current language. Restore shows a preview, then merges. The same record keeps the text already on this device. Help and example marks can only be added, not cleared by a backup. A file that is too large, damaged, or from another schema does not replace the records you already have.</p>
+      </section>
+      <section>
+        <h2><span class="zh">核对没有通过</span><span class="en">The check did not pass</span></h2>
+        <p class="zh">自动验收只认识课程附带的练习材料，并且按简体中文里的固定事实来对照。换成自己的材料后仍可以编辑和保存草稿，但不会被判成通过。独立练习不提供参考答案。打开指导之后，这次会记为在帮助下完成。</p>
+        <p class="en">The automatic check only recognizes the practice material shipped with the lesson, and it matches fixed facts in Simplified Chinese. Your own material can still be edited and saved as a draft, but it will not be marked as passed. Independent practice does not offer the reference answer. After you open the guidance, that attempt is recorded as completed with help.</p>
+      </section>
+      <section>
+        <h2><span class="zh">可选的生成服务</span><span class="en">Optional generation service</span></h2>
+        <p class="zh">未配置服务时，应用完全离线。若要使用你自己的服务，构建时把 AI_SERVICE_URL 设为不含账号密码的 HTTPS 地址。应用不保存供应商密钥。点选生成后会先确认，然后只发送本次材料和提示。</p>
+        <p class="en">Without a configured service, the app stays offline. To use your own service, set AI_SERVICE_URL at build time to an HTTPS address with no username or password. The app does not store a provider key. Generate asks you to confirm, then sends only this material and prompt.</p>
+      </section>
+      <section>
+        <h2><span class="zh">删除本机数据</span><span class="en">Delete on-device data</span></h2>
+        <p class="zh">设置底部可以删除全部本机学习资料。正在生成时不能删除。已经分享出去或另存的文件不会消失。</p>
+        <p class="en">The bottom of Settings can delete all on-device learning data. Deletion waits until generation has finished. Files you already shared or saved elsewhere remain.</p>
+      </section>
+      <section>
+        <h2><span class="zh">联系</span><span class="en">Contact</span></h2>
+        <p class="zh">应用没有客服账号。请在 <a href="https://github.com/weizhichao1027-collab/ai-study-room/issues">GitHub Issues</a> 里描述机型、系统版本和你看到的原句。不要在 Issue 里粘贴客户材料、姓名或尚未公开的工作内容。</p>
+        <p class="en">The app has no support account. Open a <a href="https://github.com/weizhichao1027-collab/ai-study-room/issues">GitHub Issue</a> with the device, the system version, and the exact sentence you saw. Do not paste client material, names, or unpublished work into an Issue.</p>
+      </section>
+    </article>
+  </main>
+  <footer class="foot frame">
+    <span>AI 自习室 0.2.0</span>
+    <a href="../privacy/"><span class="zh">隐私政策</span><span class="en">Privacy policy</span></a>
+  </footer>
+  <script src="../assets/site.js"></script>
+</body>
+</html>
