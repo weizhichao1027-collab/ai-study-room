@@ -4,10 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>技术支持 · AI 自习室</title>
-  <meta name="description" content="AI 自习室的技术支持：备份、语言、删除数据、iPhone 与 iPad、可选的 AI 服务。">
+  <meta name="description" content="AI 自习室的技术支持：行动表检查、备份、语言、删除数据、iPhone 与 iPad、可选的 AI 服务。">
   <meta name="theme-color" content="#F7FAFC" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#16232D" media="(prefers-color-scheme: dark)">
-  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="../assets/app-icon-32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="../assets/app-icon-64.png" type="image/png" sizes="64x64">
+  <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png" sizes="180x180">
   <link rel="stylesheet" href="../assets/site.css">
 </head>
 <body data-page="support">
@@ -24,14 +26,26 @@
   <main id="content" class="frame">
     <h1><span class="zh">技术支持</span><span class="en">Support</span></h1>
     <p class="lede">
-      <span class="zh">下面是应用里实际会遇到的操作。版本 0.2.0，需要 iOS 18。</span>
-      <span class="en">These are the operations the app actually has. Version 0.2.0 requires iOS 18.</span>
+      <span class="zh">下面是应用里实际会遇到的操作。版本 0.3.0，需要 iOS 18，用于 iPhone 与 iPad。</span>
+      <span class="en">These are the operations the app actually has. Version 0.3.0 requires iOS 18 and runs on iPhone and iPad.</span>
     </p>
     <article class="block support">
       <section>
         <h2><span class="zh">继续上次的练习</span><span class="en">Continue the last practice</span></h2>
         <p class="zh">今天页的主按钮会打开尚未完成的草稿。全部尝试在“我的草稿”里。左滑可以删除一份草稿；已经保存的成果仍保留自己的副本。</p>
         <p class="en">The main button on Today opens the unfinished draft. Every attempt is listed in My drafts. Swipe to delete one draft. Saved work keeps its own copy.</p>
+      </section>
+      <section>
+        <h2><span class="zh">从新手指引到自己的成果</span><span class="en">From the beginner guide to your own work</span></h2>
+        <p class="zh">目前开放七课，每课只练一件事：行动和缺项分开、只问必要问题、分清覆盖与建议、按硬约束取舍、不把计划写成成果、在真实工具里带回并核对、再合成一份项目行动包。新手指引说明如何运行提示、导回结果、找错并修订。工具实操会保留工具名、实际步骤、第一次结果和修订理由；这些步骤是学习者自报，没有外部观察，也不构成 AI 能力认证。</p>
+        <p class="en">Seven lessons are available, each teaching one skill: separate actions from gaps, ask only necessary questions, tell overrides from suggestions, choose by hard constraints, keep plans from being reported as results, bring a real tool’s output back and check it, then combine these into a project pack. The beginner guide explains how to run a prompt, bring back the result, find errors, and revise. Tool practice retains the tool name, steps, first output, and revision reason. Those steps are self-reported, without external observation, and do not certify AI ability.</p>
+        <p class="zh">教学示范用于参考，不能保存为学习通过。从示范开始自己的结果时，应用保留示范旧稿并建立空白指导尝试，继续记录已使用帮助。新材料用尽时会明确提示，你可以复习已用材料；复习不算对新材料的独立迁移证明。</p>
+        <p class="en">Teaching examples are references and cannot be saved as learning passes. Starting your own result keeps the example draft and creates an empty guided attempt with its help history. When new material runs out, the app says so and offers review. Reviewing a seen task is not evidence of independent transfer to new material.</p>
+      </section>
+      <section>
+        <h2><span class="zh">检查一份行动表</span><span class="en">Check an action table</span></h2>
+        <p class="zh">今天页可以打开这项检查。先确认笔记里的人。时间分成任务截止和整场安排，再看表格有没有补造或漏项。补上的词必须在笔记里连续出现。真实任务和提供材料的练习各有草稿，切换时保留原内容。系统自动修复或具体教学帮助会记录为使用帮助。核对练习可以留记录，但不计为整课完成。界面换成其他语言时，页面会说明课程原文、教学示例和自动验收仍用简体中文。检查卡片里的依据句也保持简体，以便对照原文。</p>
+        <p class="en">Today can open this check. Confirm the people in the note. Split times into a task deadline and the event itself, then see whether the table invented or omitted anything. An added phrase has to appear as a continuous span in the note. Real work and supplied-material practice keep separate drafts and preserve their content when you switch. Automatic repairs and concrete teaching help are recorded as assistance. A check-practice record does not complete the full lesson. When the interface is another language, the page says that lesson sources, examples, and automatic checks stay in Simplified Chinese. Evidence sentences on the check cards stay in Simplified Chinese so they can be matched to the source.</p>
       </section>
       <section>
         <h2><span class="zh">换语言</span><span class="en">Change the language</span></h2>
@@ -45,23 +59,33 @@
       </section>
       <section>
         <h2><span class="zh">备份与恢复</span><span class="en">Backup and restore</span></h2>
-        <p class="zh">在设置中导出学习备份，系统会让你选择保存位置。文件名以当前语言的应用名开头。恢复时先预览内容，再合并。同一条记录保留这台设备上的正文；帮助和示例标记只会增加，不会被备份清掉。过大、损坏或版本不符的文件不会覆盖现有记录。</p>
-        <p class="en">Export a learning backup from Settings and choose where the system saves it. The file name starts with the app name in the current language. Restore shows a preview, then merges. The same record keeps the text already on this device. Help and example marks can only be added, not cleared by a backup. A file that is too large, damaged, or from another schema does not replace the records you already have.</p>
+        <p class="zh">在设置中导出学习备份，系统会让你选择保存位置。文件名以当前语言的应用名开头。备份包含真实任务和练习里已经写了内容的核对草稿，以及工具操作自报记录。恢复时先预览内容，再合并。同一条记录保留这台设备上的正文；帮助和示例标记只会增加，不会被备份清掉。恢复分别保留已有真实任务和练习稿，只补其中空白的草稿。没有核对草稿字段的旧备份仍然可以恢复学习记录。备份文件上限为 10 MB；过大、损坏或版本不符的文件不会覆盖现有记录。恢复未完整提交时会回滚；若仍无法恢复，先保留原件，暂不写入新草稿。</p>
+        <p class="en">Export a learning backup from Settings and choose where the system saves it. The file name starts with the app name in the current language. It includes nonempty check drafts for real work and practice, plus self-reported tool records. Restore shows a preview, then merges. The same record keeps the text already on this device. Help and example marks can only be added, not cleared by a backup. Restore keeps existing real-work and practice drafts separately and fills only empty drafts. Older backups without check-draft fields can still restore learning records. The backup file limit is 10 MB; oversized, damaged, or unsupported files do not replace existing records. An incomplete restore rolls back. If recovery remains unavailable, original copies are retained and new draft writes are blocked.</p>
       </section>
       <section>
         <h2><span class="zh">核对没有通过</span><span class="en">The check did not pass</span></h2>
-        <p class="zh">自动验收只认识课程附带的练习材料，并且按简体中文里的固定事实来对照。换成自己的材料后仍可以编辑和保存草稿，但不会被判成通过。独立练习不提供参考答案。打开指导之后，这次会记为在帮助下完成。</p>
-        <p class="en">The automatic check only recognizes the practice material shipped with the lesson, and it matches fixed facts in Simplified Chinese. Your own material can still be edited and saved as a draft, but it will not be marked as passed. Independent practice does not offer the reference answer. After you open the guidance, that attempt is recorded as completed with help.</p>
+        <p class="zh">课程验收只覆盖附带的练习材料，并按简体中文里的固定事实核对。明确错误需要修订；规则无法识别的表达会提示尚未确认，你可以引用实际原文、解释判断并保存自报复核记录，这不计课程完成或独立通过。独立练习不提供参考答案；普通诊断反馈本身不记录帮助，使用具体教学提示或答案才会记录。自己的会议笔记可以转到行动表核对，但其有限检查也不构成完整课程验收。</p>
+        <p class="en">Course checks cover the supplied practice materials and fixed facts in Simplified Chinese. Known errors need revision. Unrecognized wording is marked unconfirmed; you can quote the actual source, explain your judgment, and save a self-reported review record. It does not complete a lesson or count as an independent pass. Independent practice has no reference answer. Ordinary diagnostic feedback does not itself record help; concrete teaching hints or answers do. Your own meeting note can use the action-table check, whose limited result does not complete the full course.</p>
       </section>
       <section>
-        <h2><span class="zh">可选的生成服务</span><span class="en">Optional generation service</span></h2>
-        <p class="zh">未配置服务时，应用完全离线。若要使用你自己的服务，构建时把 AI_SERVICE_URL 设为不含账号密码的 HTTPS 地址。应用不保存供应商密钥。点选生成后会先确认，然后只发送本次材料和提示。</p>
-        <p class="en">Without a configured service, the app stays offline. To use your own service, set AI_SERVICE_URL at build time to an HTTPS address with no username or password. The app does not store a provider key. Generate asks you to confirm, then sends only this material and prompt.</p>
+        <h2><span class="zh">导入导出与无法读取的草稿</span><span class="en">Import, export, and unreadable drafts</span></h2>
+        <p class="zh">行动表可以导入应用导出的 13 种语言 CSV 表头或完整 Markdown 成果，后面的提示与材料不会被当作额外行动。CSV 为以公式触发字符开头的内容加上安全前缀，导回时保留该前缀。无法读取或超出限制的核对草稿不会被空白内容覆盖；页面可以先保留原件副本，再新建草稿。备份恢复尚未完成时，请先完成恢复，或在设置明确删除全部本机数据。</p>
+        <p class="en">Action tables can import the app’s CSV headers in all 13 interface languages or a complete Markdown export. Later prompts and material are not imported as extra actions. CSV adds a safety prefix to cells that start with formula triggers, and import retains that prefix. Unreadable or oversized check drafts are not overwritten with blanks. The check page can retain an original copy before starting a draft. If a backup restore is still pending, complete recovery first or explicitly delete all on-device data in Settings.</p>
+      </section>
+      <section>
+        <h2><span class="zh">需要联网或 AI 账号吗？</span><span class="en">Do I need a connection or AI account?</span></h2>
+        <p class="zh">0.3.0 的首课、固定材料练习、行动表核对和本机保存均可离线使用，无需注册。此版本没有课内实时模型服务。第 6 课需要你在可访问的 AI 网站或工具中使用课程提供的虚构材料，再把结果带回来；外部工具可能需要自己的账号或网络。应用不能观察或核验你在其他工具里的实际操作。</p>
+        <p class="en">The first exercise, fixed practice, action-table checking and local storage in 0.3.0 work offline without registration. This release has no live in-app model service. Lesson 6 asks you to use fictional course material in an accessible AI website or tool, then bring back the result. That tool may require its own account or connection. The app cannot observe or verify actions in other tools.</p>
+      </section>
+      <section>
+        <h2><span class="zh">依据、修订和复练</span><span class="en">Evidence, revisions and practice</span></h2>
+        <p class="zh">点击「定位原文依据」可在完整材料里查看引用；没有逐字匹配时会明确提示。行动表首次检查保留当时内容，后续修改可在「核对修订」里比较，随成果和备份保存；更换原文后重新开始对比。重新导入的行按新增和移除显示，不猜测对应关系。「我的成果」按作品统计曾出现的核对问题，同一作品反复检查不增加次数，练习预设错误不计入统计。你可以继续保存新的真实任务。</p>
+        <p class="en">“Locate source evidence” shows a quote in the complete material or states that no exact match was found. The first action-table check retains a baseline for later revision comparisons, saved with your work and backups. Changing the source resets it. Reimported rows appear as additions/removals, without guessed matches. Saved work groups observed checking issues once per work product; repeated checks and planted course errors do not inflate counts. You can save further real-work documents.</p>
       </section>
       <section>
         <h2><span class="zh">删除本机数据</span><span class="en">Delete on-device data</span></h2>
-        <p class="zh">设置底部可以删除全部本机学习资料。正在生成时不能删除。已经分享出去或另存的文件不会消失。</p>
-        <p class="en">The bottom of Settings can delete all on-device learning data. Deletion waits until generation has finished. Files you already shared or saved elsewhere remain.</p>
+        <p class="zh">设置底部可以删除全部本机学习资料，包括行动表检查草稿。正在生成时不能删除。已经分享出去或另存的文件不会消失。</p>
+        <p class="en">The bottom of Settings can delete all on-device learning data, including the action-table check draft. Deletion waits until generation has finished. Files you already shared or saved elsewhere remain.</p>
       </section>
       <section>
         <h2><span class="zh">联系</span><span class="en">Contact</span></h2>
@@ -71,7 +95,7 @@
     </article>
   </main>
   <footer class="foot frame">
-    <span>AI 自习室 0.2.0</span>
+    <span>AI 自习室 0.3.0</span>
     <a href="../privacy/"><span class="zh">隐私政策</span><span class="en">Privacy policy</span></a>
   </footer>
   <script src="../assets/site.js"></script>

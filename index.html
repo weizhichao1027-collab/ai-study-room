@@ -4,10 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>AI 自习室</title>
-  <meta name="description" content="AI 自习室是一款 iPhone 与 iPad 应用。在本机把工作材料做成可以核对的成果。">
+  <meta name="description" content="面向中文职场新手的 AI 输出核对训练：定位原文依据、保留未知、对比修订，再换材料独立练习。">
   <meta name="theme-color" content="#F7FAFC" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#16232D" media="(prefers-color-scheme: dark)">
-  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/app-icon-32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="assets/app-icon-64.png" type="image/png" sizes="64x64">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" sizes="180x180">
   <link rel="stylesheet" href="assets/site.css">
 </head>
 <body data-page="home">
@@ -24,33 +26,40 @@
   <main id="content" class="frame">
     <h1>AI 自习室</h1>
     <p class="lede">
-      <span class="zh">在 iPhone 或 iPad 上，把一份工作材料做成可以核对的成果。没有账号。记录留在这台设备。</span>
-      <span class="en">On iPhone or iPad, turn one piece of work into a result you can check. No account. Records stay on the device.</span>
+      <span class="zh">面向中文职场新手，练习核对 AI 输出里的负责人、时间和数字。找到原文依据，保留未确认项，对比修改前后，再换一份材料练习。无需账号，记录留在本机。</span>
+      <span class="en">Practice checking AI outputs against Simplified Chinese workplace source material. Verify owners, times and numbers; keep unknowns, compare revisions and practice with another document. No account; records stay on-device.</span>
     </p>
+    <section aria-labelledby="check-example">
+      <h2 id="check-example"><span class="zh">一次具体的核对</span><span class="en">One concrete check</span></h2>
+      <p class="zh">原文：「发布页面还需要校对，会上没有指定负责人。」<br>练习中故意写错：「负责人：小林」。<br>对照原文后修订为：「负责人：未确认」，并保留引用。预设错误是教学内容，不是假装成实时 AI 生成。</p>
+      <p class="en">The source says a release page needs proofreading, without naming an owner. The exercise deliberately assigns Xiaolin. Correct the owner to “unconfirmed” and retain the quote. This is a labeled teaching exercise, not a live AI response.</p>
+      <p class="zh">行动表核对支持定位原文、查看修改前后、保存多份真实任务，并按已保存作品中出现的核对问题选择独立材料复练。检查只覆盖声明的规则，不保证整份作品正确。</p>
+      <p class="en">Action-table checking includes source navigation, revision comparisons, multiple saved work products and practice based on observed checking issues. Checks cover the stated rules and do not certify an entire document.</p>
+    </section>
     <div class="desk">
       <ol class="steps">
         <li>
           <b>1</b>
           <div>
             <strong class="zh">读材料</strong><strong class="en">Read the material</strong>
-            <p class="zh">从一堂大约十五分钟的课开始。课程原文是简体中文，用来对照固定事实。</p>
-            <p class="en">Start with a lesson of about fifteen minutes. Source text stays in Simplified Chinese so the facts can be checked.</p>
+            <p class="zh">第一步先读一句原文，找出行动表里没有依据的负责人。课程原文和核对问题说明保持简体中文。</p>
+            <p class="en">Start with one source sentence and find an unsupported owner in an action table. Source materials and authored checking explanations stay in Simplified Chinese.</p>
           </div>
         </li>
         <li>
           <b>2</b>
           <div>
             <strong class="zh">写下要求</strong><strong class="en">Write the request</strong>
-            <p class="zh">自己写给 AI 的提示。可以复制到你常用的工具，也可以在已配置的 HTTPS 服务里生成。发送前会先请你确认。</p>
-            <p class="en">Write the prompt yourself. Copy it into the tool you already use, or generate through a configured HTTPS service. Nothing is sent until you confirm.</p>
+            <p class="zh">前几课先在 App 里写要求、对照原文。第 6 课才把虚构材料复制到你能打开的 AI 工具。当前 0.3.0 不提供课内实时模型服务，首课和本机核对可离线完成。</p>
+            <p class="en">Earlier lessons stay in the app: write the request and check it against the source. Lesson 6 is when you copy fictional material into an AI tool you can open. Version 0.3.0 does not include a live in-app model service. The first exercise and local checks work offline.</p>
           </div>
         </li>
         <li>
           <b>3</b>
           <div>
             <strong class="zh">核对并留下</strong><strong class="en">Check it, then keep it</strong>
-            <p class="zh">把结果带回作品区，对照原文标出事实和仍待确认的地方。保存的成果带着提示、依据和验证范围。</p>
-            <p class="en">Bring the result back, mark what the source actually says, and keep what still needs confirmation. A saved result carries the prompt, the evidence, and the scope of the check.</p>
+            <p class="zh">把结果带回作品区，对照原文修订事实和待确认项。保存的成果保留提示、依据与核对范围；教学示范不计学习通过，外部工具步骤属于学习者自报。</p>
+            <p class="en">Bring the result back and revise facts and open questions against the source. Saved work retains the prompt, evidence, and check scope. Teaching examples do not count as learning passes; external tool steps are self-reported.</p>
           </div>
         </li>
       </ol>
@@ -61,8 +70,23 @@
 3. 老周检查文案中的数据，下次会议之前完成。
 4. 发布页面还需要校对，会上没有指定负责人。
 5. 图片要用新品牌色，颜色值后续确认。</p>
+        <p class="label"><span class="zh">怎么读</span><span class="en">How to read it</span></p>
+        <p class="zh">周四下午是整场节点，不写成某一行行动的截止。校对没有指定负责人。颜色值还没给出，留成待确认。</p>
+        <p class="en">Thursday afternoon is the event, not a deadline for one action. Proofreading has no named owner. The color value is not given, so it stays unconfirmed.</p>
       </aside>
     </div>
+    <section class="block">
+      <h2><span class="zh">七课各练一件事</span><span class="en">Seven lessons, one skill each</span></h2>
+      <ol>
+        <li><span class="zh">行动表：节点不冒充行动，没写的人和时间留成待确认。</span><span class="en">Action table: a milestone is not an action, and unnamed people or times stay unconfirmed.</span></li>
+        <li><span class="zh">澄清邮件：只问会挡住跟进的空缺，每个问题附上原文。</span><span class="en">Clarification mail: ask only the gaps that block follow-up, and attach the source to each question.</span></li>
+        <li><span class="zh">需求表：被点名覆盖的用新值，讨论建议不升成已批准要求。</span><span class="en">Requirements: use the new value only where an override is named. A suggestion does not become an approved requirement.</span></li>
+        <li><span class="zh">方案比较：一条硬约束失败就不能推荐；两个都不满足就写无可行方案。</span><span class="en">Comparison: one failed hard constraint blocks a recommendation. If neither option works, write that none is feasible.</span></li>
+        <li><span class="zh">周报：完成数和计划数分开，材料里没有的增长率不补。</span><span class="en">Weekly report: keep finished counts apart from the plan, and do not add a growth rate the material never gives.</span></li>
+        <li><span class="zh">真实工具：自己运行，带回第一次结果，对照原文决定改还是留。</span><span class="en">A real tool: run it yourself, bring back the first result, and decide against the source whether to change it or keep it.</span></li>
+        <li><span class="zh">项目行动包：行动、比较、澄清和版本放在同一份里，不沿用上一课的选择。</span><span class="en">Project pack: actions, comparison, clarification, and version in one place, without carrying over the previous lesson’s choice.</span></li>
+      </ol>
+    </section>
     <section class="block facts-block">
       <h2><span class="zh">留在这台设备</span><span class="en">It stays on this device</span></h2>
       <dl class="facts">
@@ -72,20 +96,25 @@
           <dd class="en">No sign-in, no sync, no ads, and no analytics.</dd>
         </div>
         <div>
+          <dt><span class="zh">检查一份行动表</span><span class="en">Check an action table</span></dt>
+          <dd class="zh">先确认笔记里的人。时间分成任务截止和整场安排，再看表格有没有补造。真实任务与提供材料的练习分别保留草稿。核对练习记录不计整课完成；通过也不表示内容可以直接发出。</dd>
+          <dd class="en">Confirm the people in the note. Split times into a task deadline and the event itself, then see whether the table added anything. Real work and supplied-material practice keep separate drafts. A check-practice record does not complete the full lesson, and a pass does not mean the result is ready to send.</dd>
+        </div>
+        <div>
           <dt><span class="zh">iPhone 与 iPad</span><span class="en">iPhone and iPad</span></dt>
           <dd class="zh">需要 iOS 18。窄屏是单列；宽屏把课程和练习并排。iPad 使用侧边栏，并支持分屏。</dd>
           <dd class="en">Requires iOS 18. Narrow screens stay in one column. Wide screens place the path beside the practice. iPad uses a sidebar and supports Split View.</dd>
         </div>
         <div>
           <dt><span class="zh">备份由你保存</span><span class="en">Backups stay where you put them</span></dt>
-          <dd class="zh">可以导出 JSON 学习备份，并在另一台设备上合并缺失记录。文件去向由系统的文件选择器决定。</dd>
-          <dd class="en">Export a JSON learning backup and merge missing records on another device. The system file picker decides where the file goes.</dd>
+          <dd class="zh">可以导出 JSON 学习备份，并在另一台设备上合并缺失记录。备份包含真实任务与练习的核对草稿；恢复保留各类已有本机稿，只补空白草稿。文件去向由系统的文件选择器决定。</dd>
+          <dd class="en">Export a JSON learning backup and merge missing records on another device. It includes check drafts for real work and practice. Restore keeps existing local content in each draft and fills only empty drafts. The system file picker decides where the file goes.</dd>
         </div>
       </dl>
     </section>
   </main>
   <footer class="foot frame">
-    <span>AI 自习室 0.2.0</span>
+    <span>AI 自习室 0.3.0</span>
     <span><span class="zh">界面提供 13 种语言。课程原文与自动验收保持简体中文。</span><span class="en">The interface ships in 13 languages. Lesson sources and automatic checks stay in Simplified Chinese.</span></span>
   </footer>
   <script src="assets/site.js"></script>

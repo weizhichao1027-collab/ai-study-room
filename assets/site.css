@@ -183,6 +183,7 @@ h3 { font-size: 1.25rem; margin: 0 0 8px; }
 }
 .excerpt p { margin: 0; white-space: pre-wrap; font-family: var(--serif); font-size: 1.05rem; line-height: 1.7; }
 .excerpt .label { font-family: var(--sans); font-size: 0.85rem; color: var(--secondary); margin-bottom: 12px; }
+.excerpt .label:not(:first-child) { margin-top: 20px; }
 
 .block { margin-top: 64px; max-width: 78ch; }
 .facts-block { max-width: none; }

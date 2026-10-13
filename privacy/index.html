@@ -7,7 +7,9 @@
   <meta name="description" content="AI 自习室的隐私政策：学习记录留在本机，不设账号，不追踪。">
   <meta name="theme-color" content="#F7FAFC" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#16232D" media="(prefers-color-scheme: dark)">
-  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="../assets/app-icon-32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="../assets/app-icon-64.png" type="image/png" sizes="64x64">
+  <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png" sizes="180x180">
   <link rel="stylesheet" href="../assets/site.css">
 </head>
 <body data-page="privacy">
@@ -24,15 +26,15 @@
   <main id="content" class="frame">
     <h1><span class="zh">隐私政策</span><span class="en">Privacy policy</span></h1>
     <p class="lede">
-      <span class="zh">适用于 AI 自习室 0.2.0（套装标识 com.shangshou.ai）。生效日期：2026 年 10 月 11 日。</span>
-      <span class="en">Applies to AI Study Room 0.2.0 (bundle identifier com.shangshou.ai). Effective 11 October 2026.</span>
+      <span class="zh">适用于 AI 自习室 0.3.0（套装标识 com.shangshou.ai）。本版更新于 2026 年 10 月 13 日。</span>
+      <span class="en">Applies to AI Study Room 0.3.0 (bundle identifier com.shangshou.ai). This version was updated on 13 October 2026.</span>
     </p>
     <div class="docs">
       <nav class="contents" aria-label="目录">
         <ol>
           <li><a href="#local"><span class="zh">本机记录</span><span class="en">On-device records</span></a></li>
           <li><a href="#none"><span class="zh">不收集的内容</span><span class="en">What is not collected</span></a></li>
-          <li><a href="#ai"><span class="zh">可选的 AI 服务</span><span class="en">Optional AI service</span></a></li>
+          <li><a href="#ai"><span class="zh">外部 AI 工具</span><span class="en">External AI tools</span></a></li>
           <li><a href="#files"><span class="zh">备份、分享与复制</span><span class="en">Backup, share, copy</span></a></li>
           <li><a href="#language"><span class="zh">语言</span><span class="en">Language</span></a></li>
           <li><a href="#delete"><span class="zh">删除</span><span class="en">Deletion</span></a></li>
@@ -42,8 +44,8 @@
       <article>
         <section id="local">
           <h2><span class="zh">本机记录</span><span class="en">On-device records</span></h2>
-          <p class="zh">草稿、成果、提示、材料和帮助记录写在这台设备的应用支持目录里，文件名保持为既有的 state.json，以便已有记录仍能打开。文件使用“首次解锁前完成保护”的数据保护。应用不要求注册，也没有开发者账号同步。</p>
-          <p class="en">Drafts, saved work, prompts, material, and help marks are written in this device’s application support folder. The file name stays state.json so existing records can still be opened. The file uses complete data protection until the first unlock. The app does not ask you to register, and the developer does not sync an account.</p>
+          <p class="zh">草稿、成果、提示、材料和帮助记录写在这台设备的应用支持目录里，文件名保持为既有的 state.json，以便已有记录仍能打开。工具名、实际步骤、首次输出与修订理由等自报记录也保存在本机。核对修订保留起始行动表、原文、核对次数及出现的问题类型，仅用于本机对比与复练建议。真实任务与练习的行动表核对草稿分别保留，写在同一目录的 grounded-session.json。这些文件使用“首次解锁前完成保护”的数据保护。应用不要求注册，也没有开发者账号同步。</p>
+          <p class="en">Drafts, saved work, prompts, material, and help marks are written in this device’s application support folder. The file name stays state.json so existing records can still be opened. Self-reported tool names, steps, initial outputs, and revision reasons also stay on the device. Revision records retain the initial table, source, check count and observed issue types for on-device comparisons and practice suggestions. Real-work and practice check drafts are kept separately in grounded-session.json in the same folder. These files use complete data protection until the first unlock. The app does not ask you to register, and the developer does not sync an account.</p>
         </section>
         <section id="none">
           <h2><span class="zh">不收集的内容</span><span class="en">What is not collected</span></h2>
@@ -51,16 +53,16 @@
           <p class="en">The app does not include ads, analytics, crash reporting, or a third-party tracking SDK. Its privacy manifest declares no tracking and no collected data. The developer does not receive your material, prompts, or saved work because you used a lesson.</p>
         </section>
         <section id="ai">
-          <h2><span class="zh">可选的 AI 服务</span><span class="en">Optional AI service</span></h2>
-          <p class="zh">公开发行的训练版可以完全离线使用预先编写的课程示例。示例会标明“预先编写的课程示例”，不会假装成实时模型。</p>
-          <p class="en">The published practice build can be used offline with prepared lesson examples. Those examples are labeled as prepared lesson examples and are not presented as a live model.</p>
-          <p class="zh">如果某个构建配置了你自己的 HTTPS 地址，提示页才会出现生成入口。只有在你点选确认之后，本次材料和提示才会 POST 到该地址。应用不保存模型供应商的密钥。请求会拒绝带有用户名或密码的地址，也不跟随重定向把内容再送出去。那个 HTTPS 服务由配置它的人运营，它收到内容之后如何处理，适用该服务自己的说明，不属于本应用的收集。</p>
-          <p class="en">A build shows a generate action only when it was configured with your own HTTPS address. This material and prompt are posted there only after you confirm. The app does not store a model-provider key. It rejects addresses that contain a username or password, and it does not follow redirects in a way that resends the body. That HTTPS service is operated by whoever configured it. What happens after it receives the text is that service’s own notice, not collection by this app.</p>
+          <h2><span class="zh">外部 AI 工具</span><span class="en">External AI tools</span></h2>
+          <p class="zh">当前训练版本可以完全离线使用预先编写的课程示例。示例会明确标记，不会假装成实时模型，也不计为学习通过。外部工具的使用步骤由学习者填写，应用不观察你在外部工具中的操作。</p>
+          <p class="en">The current practice build can be used offline with prepared lesson examples. They are explicitly labeled, are not presented as a live model, and do not count as learning passes. External tool steps are supplied by the learner; the app does not observe actions in external tools.</p>
+          <p class="zh">0.3.0 没有课内实时模型服务，不会把材料或提示发送给模型供应商。第 6 课由你主动复制虚构材料到自己选择的外部工具；进入该工具后的数据处理由其隐私政策说明。请勿复制敏感工作材料。</p>
+          <p class="en">Version 0.3.0 has no live in-app model service and does not send material or prompts to a model provider. In lesson 6, you choose to copy fictional material into an external tool. Its privacy policy describes processing after you enter that tool. Do not copy sensitive work material.</p>
         </section>
         <section id="files">
           <h2><span class="zh">备份、分享与复制</span><span class="en">Backup, share, and copy</span></h2>
-          <p class="zh">导出学习备份会生成一个 JSON 文件，由你在系统文件面板里选择保存位置。导入只读取你选中的文件，并把缺失记录合并进本机；同一条记录保留本机正文。应用不会把备份上传到开发者。</p>
-          <p class="en">Exporting a learning backup creates a JSON file, and you choose where the system file panel saves it. Import reads only the file you select and merges missing records onto this device. The same record keeps this device’s text. The app does not upload the backup to the developer.</p>
+          <p class="zh">导出学习备份会生成一个 JSON 文件，由你在系统文件面板里选择保存位置。真实任务和练习的核对草稿里已经写了内容时，这份文件会带上它们，也包含工具操作自报记录。导入只读取你选中的文件，并把缺失的学习记录合并进本机；同一条记录保留本机正文。恢复分别保留两类已有本机核对草稿，只补空白草稿；需要修复无法读取的原件时，先另存副本保留。恢复期间会在本机暂存原件快照和恢复标记，以便出错或进程中断时回滚。应用不会把备份上传到开发者。</p>
+          <p class="en">Exporting a learning backup creates a JSON file, and you choose where the system file panel saves it. It includes nonempty real-work and practice check drafts, along with self-reported tool records. Import reads only the file you select and merges missing learning records onto this device. The same record keeps this device’s text. Restore keeps existing content in each check draft and fills only empty drafts. If an unreadable original needs recovery, it is retained in a separate copy first. During restore, original snapshots and a restore marker are temporarily kept on-device so errors or process interruptions can roll back. The app does not upload the backup to the developer.</p>
           <p class="zh">分享成果使用系统分享面板，目的地由你选择。复制提示或材料时，文本只留在本机剪贴板，大约十分钟后过期，不会通过通用剪贴板同步到你的其他设备。</p>
           <p class="en">Sharing a result uses the system share sheet, and you choose the destination. When you copy a prompt or the material, the text stays on this device’s pasteboard, expires after about ten minutes, and is not synced to your other devices through Universal Clipboard.</p>
         </section>
@@ -71,8 +73,8 @@
         </section>
         <section id="delete">
           <h2><span class="zh">删除</span><span class="en">Deletion</span></h2>
-          <p class="zh">设置里可以删除全部本机学习资料，包括材料、草稿、成果、提示和学习记录，以及应用为损坏文件留下的本地副本和临时导出。已经分享到其他 App 或已保存到别处的备份不会被这次删除收回。删除单份草稿不会删除已经保存的成果。</p>
-          <p class="en">Settings can delete all on-device learning data, including material, drafts, saved work, prompts, and learning records, plus local copies the app kept for a damaged file and temporary exports. Files you already shared to another app, or backups you saved somewhere else, are not pulled back. Deleting one draft does not delete work you already saved.</p>
+          <p class="zh">设置里可以删除全部本机学习资料，包括材料、草稿、成果、提示、学习记录和行动表检查草稿，以及应用为损坏文件留下的本地副本、恢复快照与标记、临时导出。已经分享到其他 App 或已保存到别处的备份不会被这次删除收回。删除单份草稿不会删除已经保存的成果。</p>
+          <p class="en">Settings can delete all on-device learning data, including material, drafts, saved work, prompts, learning records, and the action-table check draft, plus retained copies of damaged files, restore snapshots and markers, and temporary exports. Files you already shared to another app, or backups you saved somewhere else, are not pulled back. Deleting one draft does not delete work you already saved.</p>
         </section>
         <section id="children">
           <h2><span class="zh">儿童</span><span class="en">Children</span></h2>
@@ -83,7 +85,7 @@
     </div>
   </main>
   <footer class="foot frame">
-    <span>AI 自习室 0.2.0</span>
+    <span>AI 自习室 0.3.0</span>
     <a href="../support/"><span class="zh">技术支持</span><span class="en">Support</span></a>
   </footer>
   <script src="../assets/site.js"></script>
